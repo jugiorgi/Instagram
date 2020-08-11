@@ -4,9 +4,11 @@ import RoundAvatar from '../RoundAvatar';
 import UserStatus from '../UserStatus';
 import logo from '~/assets/logo/logo.png';
 import logoName from '~/assets/logo/logo-name.png';
-import settings from '~/assets/logo/settings.png';
+import { MdDashboard, MdOndemandVideo } from 'react-icons/md';
+import { RiTvLine, RiSettings5Line, RiBook2Line, RiLogoutBoxRLine } from "react-icons/ri";
+import { FaShoppingBag } from "react-icons/fa";
 
-import { Container, UserProfile, Content } from './styles';
+import { Container, UserProfile, Content, Icon } from './styles';
 
 export default function Sidebar() {
 	return (
@@ -27,30 +29,53 @@ export default function Sidebar() {
 
 			<Content>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<MdDashboard size={30}  className='icons'/>
+					</button>
 					<span>Feed</span>
 				</li>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<RiBook2Line size={30} className='icons'/>
+					</button>
 					<span>Activity</span>
 				</li>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<RiTvLine size={30} className='icons'/>
+					</button>
 					<span>IGTV</span>
 				</li>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<MdOndemandVideo size={30} className='icons'/>
+					</button>
 					<span>Reels</span>
 				</li>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<FaShoppingBag size={30} className='icons'/>
+					</button>
 					<span>Shop</span>
 				</li>
 				<li>
-					<img src={settings}/>
+					<button type="button">
+						<RiSettings5Line size={30} className='icons'/>
+					</button>
 					<span>Settings</span>
 				</li>
+
+				<hr />
+				
+				<li>
+					<button type="button">
+						<RiLogoutBoxRLine size={30} color="#FFF"/>
+					</button>
+					<span>Logout</span>
+				</li>
 			</Content>
+
+			
 		</Container>
 	);
 }

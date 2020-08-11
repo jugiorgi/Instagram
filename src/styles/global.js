@@ -17,9 +17,11 @@ export default createGlobalStyle`
 	--color-purple: #7232bd;
 	--color-orange: #f46f30;
 	--color-orange-light: #ffdc7d;
-	--color-pink: #c32aa3;
+	--color-pink: rgba(195, 42, 163);
+	--color-pink-opacity:  rgba(195, 42, 163, .2);
 	--color-white: #FFF;
-	--color-white-opacity: rgba(255, 255, 255, .2);
+	--color-white-opacity2: rgba(255, 255, 255, .2);
+	--color-white-opacity1: rgba(255, 255, 255, .1);
 }
 
 * {

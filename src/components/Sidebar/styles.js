@@ -56,21 +56,55 @@ export const Content = styled.ul`
     display: grid;
 	grid-template: repeat(5, 1fr);
 
+    hr {
+        margin: 20px auto;
+        height: 0;
+        border: 0;
+        border-top: 1px solid var(--color-white-opacity1);
+        width: 80%;
+    }
+
     li {
         height: 40px;
         display: flex;
         align-items: center;
 
-        img {
-            margin-left: 30px; 
-            height: 25px;
-            width: 25px;
+        button {
+            background: none;
+            border: 0;
+            margin-left: 10%; 
+
+           
+            .icons{
+                color: var(--color-white);
+            }
+
         }
 
         span {
             margin-left: 20px; 
-            font-size: 16px;
+            font-size: 20px;
+        }
+       
+    }
+
+    li:hover {
+        background: var(--color-pink-opacity);
+        border-right: 3px solid var(--color-pink);
+
+        .icons{
+            color: linear-gradient(0deg, blue, green 40%, red);
+            background: linear-gradient(-170deg, 
+                var(--color-blue),
+                var(--color-purple), 
+                var(--color-pink), 
+                var(--color-orange),
+                var(--color-orange-light));
         }
     }
+    
 `;
 
+export const Icon = styled.div`
+    background: red;
+`;

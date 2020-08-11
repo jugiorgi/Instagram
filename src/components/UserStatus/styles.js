@@ -8,7 +8,7 @@ export const Container = styled.div`
 	list-style: none;
 
     div + div {
-        border-left: 1px inset var(--color-white-opacity);
+        border-left: 1px inset var(--color-white-opacity2);
     }
 
     div {
