@@ -22,6 +22,7 @@ export default createGlobalStyle`
 	--color-white: #FFF;
 	--color-white-opacity2: rgba(255, 255, 255, .2);
 	--color-white-opacity1: rgba(255, 255, 255, .1);
+	--color-grey: #999;
 }
 
 * {
@@ -36,9 +37,11 @@ export default createGlobalStyle`
 }
 
 html, body, #root {
+	margin: 0;
+	padding: 0;
 	min-height: auto;
-	height: 100%;
-	background: linear-gradient(-90deg, #7159c1, #ab59c1);
+	height: auto;
+	background: var(--color-background);
 }
 
 body {

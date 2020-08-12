@@ -6,7 +6,7 @@ export default function RoundAvatar({ avatar }) {
 	return (
 		<Container>
             <Border>
-		        <img src={avatar} alt="logo" />
+		        <img src={avatar} alt="User" />
             </Border>
 		</Container>
 	);

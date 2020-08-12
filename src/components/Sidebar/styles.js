@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    position: fixed;
 	background: var(--color-primary);
     height: 100vh;
-    width: 25%;
+    width: 20%;
+    margin-left: -20%;
 `;
 
 
@@ -29,9 +31,15 @@ export const UserProfile = styled.div`
     }
 
     #logo_name {
-        width: 40%;
-        height: 50px;
+        width: 50%;
+        height: 100px;
         margin-left: 24px;
+    }
+
+    > div {
+        width: 200px;
+        height: 200px;
+        border: none;
     }
 
     h1 {

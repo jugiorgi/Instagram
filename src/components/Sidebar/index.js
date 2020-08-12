@@ -18,11 +18,13 @@ export default function Sidebar() {
 					<img id="logo" src={logo} alt="logo" />
 					<img id="logo_name" src={logoName} alt="Instagram" />
 				</header>
-
-				<RoundAvatar avatar="https://i.pinimg.com/originals/ee/1a/41/ee1a41a4531ffb58f37b0064457b4e00.png"/>
-
-				<h1>Clarke Griffin</h1>
-				<span>@clarkegriff</span>
+				
+				<div>
+					<RoundAvatar avatar="https://66.media.tumblr.com/dc960340a5c17d5695f7e8b10879911b/tumblr_prj2m2kXwe1szajfa_540.jpg"/>
+				</div>
+				
+				<h1>Eliza Jane Taylor</h1>
+				<span>@elizataylor</span>
 			</UserProfile>
 
 			<UserStatus />
@@ -74,8 +76,6 @@ export default function Sidebar() {
 					<span>Logout</span>
 				</li>
 			</Content>
-
-			
 		</Container>
 	);
 }
